@@ -1,0 +1,217 @@
+body{
+
+    background-image: url("../image/background\ chuva.gif") ;
+    background-repeat: round;
+    background-position: center;
+    
+    background-color: black;   /* Fui eu que coloquei */
+    
+    
+    
+    font-family: 'VT323',monospace;
+    color:  white;
+    font-size: 18px;            /* alterei de 18 para: */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+    
+    }
+
+    .titulo {
+
+        display: flex;
+        align-self: start;
+        
+    
+    }
+ 
+    .cartao{               /* aquele quadrado no meio do portifolio*/
+    
+        background-color: ease-in-out;  /* eu que coloquei aqui */
+        background-color: black;
+        width: 500px;            /* eu alterei de 370 px para: 500 px*/
+        border: 2px solid darkgreen;
+        border-radius: 10px;
+        overflow: hidden;
+        
+            /* ISSO FUI EU QUE COLOQUEI */
+        align-items: center;    /* ISSO FUI EU QUE COLOQUEI */
+       /* background-position: 40px;     ISSO FUI EU QUE COLOQUEI */
+      
+    }
+    
+    .abas img {      /* se refere as imagens das abas */                  
+    
+    width: 30px;
+    
+    }
+    
+    .cartao .minhas-informacoes {      /*se refere a primeira parte do cartao*/
+    
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinha horizontalmente por causa do flex direction column */
+    gap: 20px;  /* de 20px para: */
+    
+    }
+    
+    .cartao .minhas-informacoes img {   /* imagem das minhas informaçoes (foto de perfil) */
+    
+    border-radius: 50px;
+    border: 4px solid darkgreen;;
+    height: 130px;                  /* mudei de 200 para: 130 */
+   
+
+
+    }
+    
+    .cartao .minhas-informacoes .nome {     /* O Meu nome */
+    
+       font-size: 26px;
+    
+    }
+    
+    .cartao  .minhas-informacoes .cargo {   /* a parte que diz que estou aprendendo front end */
+    
+        font-size: 20px;
+        color: white;
+
+    }
+    
+    .cartao .conteudo {          /* toda a parte das abas do cartao */
+    
+     background-color: rgb(77, 52, 77);
+     margin-top: 15px;
+    
+     text-align:center;   /*Fui Eu que COloquei*/
+    
+
+    }
+    
+    .cartao .abas {           /* abas selecionada e aba normal */
+        display: flex;
+    }
+    
+    .cartao .abas .aba {       /* aba normal*/
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      cursor: pointer;
+
+      background-color: rgb(55, 52, 80);     /* Fui eu que coloquei */
+
+      transition: background-color 0.2s ease-in-out;  /* transicao entre a cor dos botoes */
+    
+
+    }
+    
+    .cartao .abas .aba.selecionada{    /* aba selecionada */
+       background-color: rgb(77, 52, 77);
+       
+       /* Fui eu que coloquei*/
+
+    }
+    
+    .cartao .informacoes.abas{       /* a parte do sobre e os três paragrafos*/
+    
+        background-color: white;
+    }
+    
+    .cartao .abas .aba:hover{        /* a cor dos botoes das abas */
+        background-color: gray;
+    }
+    
+    
+    
+    .sobre{
+
+        align-content: center;   /* fui eu que botei para alinhar o texto  */
+        align-items: center;  /* Fui eu que botei */
+        background-position: ease-in-out; /* fui eu que botei */
+
+    }
+
+    .informacoes.abas .sobre{    /* a aba de informações tamanho do texto */
+        font-size: 22px;
+        margin-bottom: 20px;      
+        text-align: center;
+        
+        color: white;  /* ESSA PARTE FUI EU QUE BOTEI*/
+   
+    }
+
+    .informacoes.abas .sobre{   /* a parte do back ground do sobre */
+        min-height: 260px;
+        padding: 15px;
+       
+    }
+    
+    .informacoes.abas .sobre{  /* limitador de tamanho do div na aba */
+    
+        font-size: 20px;
+        max-height: 180px;
+        overflow: auto;
+        padding-right: 15px;
+        
+    }
+
+    
+    .informacoes-abas .sobre span{  /* os textos destacados */
+        color: lightblue;
+    }
+    
+    .redes-sociais {            /* toda a parte das redes sociais */
+     
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-height: 180px;
+        overflow-y: auto;
+
+        background-color: rgb(55, 52, 80);  /* Fui eu que fiz*/
+        text-align: center;    /* Fui eu que fiz*/
+    }
+    
+    .redes-sociais li a{        /* todos os links da parte das redes sociais */
+    
+      /*  background-color: red;         FUI EU QUE TRANSFORMEI EM COMENTARIO       */   
+        width: 210px;
+        display: block; 
+        color: white;
+        text-align: center; 
+        padding: 10px;
+        font-size: 20px;
+        transition: opacity 0.3s ease-in-out;
+
+        align-items: center;   /* fui eu que coloquei isso*/
+
+
+    }
+    
+    .redes-sociais ul {  /* o background da area das redes sociais*/
+      background-color: rgb(104, 77, 104);
+    
+    }
+    
+    .redes-sociais .instagram {      /* background do instagram */
+      background-color: #532222;
+    }
+    
+    .redes-sociais .facebook {       /* background do facebook */
+        background-color: #141635;
+    }
+    
+    .redes-sociais .linkedin {         /* background do linkedin */
+        background-color: #142535; 
+    }
+    
+    .redes-sociais li a :hover{   /* mudança de cor dos botões das redes */
+     opacity: 0.8;
+    
+    }
+    
+    
